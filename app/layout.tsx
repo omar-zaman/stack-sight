@@ -43,6 +43,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       {/* The viewport never scrolls: the app shell's <main> is the page scroll container. */}
       <body className="h-full overflow-hidden overscroll-none bg-background text-foreground">
         <AppShell>{children}</AppShell>
+        <Analytics />
       </body>
     </html>
   );
